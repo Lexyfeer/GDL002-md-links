@@ -1,4 +1,22 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.0.0",
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lexyfeer/GDL002-md-links.git"
+  },
+  "author": "Nancy Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lexyfeer/GDL002-md-links/issues"
+  },
+  "homepage": "https://github.com/Lexyfeer/GDL002-md-links#readme"
 }
