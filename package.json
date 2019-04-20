@@ -1,13 +1,13 @@
 {
   "name": "md-links",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "## Preámbulo",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "npm test"
+    "test": "jest --coverage",
+    "eslint": "eslint --ext .js test/",
+    "pretest": "npm run eslint",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,13 @@
   },
   "author": "Nancy Rodriguez",
   "license": "ISC",
+  "bin": {},
   "bugs": {
     "url": "https://github.com/Lexyfeer/GDL002-md-links/issues"
   },
-  "homepage": "https://github.com/Lexyfeer/GDL002-md-links#readme"
+  "homepage": "https://github.com/Lexyfeer/GDL002-md-links#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1"
+  }
 }
