@@ -1,19 +1,24 @@
-const mdLinks = require('../mdlinks.js');
+const mdLinks = require('../lib/mdlinks.js');
+ 
 
-describe ('pathInserted', () => {
-  it('Should return false', () => {
-    expect(mdLinks.pathInserted()).toBe (false);
+// describe ('readFromFolder', () => {
+//   it('Should return true', () => {
+//     expect(mdLinks.readFromFolder('./')).toBe(true);
+//   });
+// })
+
+describe('validateExtension', () => {
+  it('is a function', () => {
+    expect(typeof mdLinks.validateExtension).toBe('function');
   });
-  it('Should return true', () => {
-    expect(mdLinks.pathInserted('./test.md')).toBe(true);
+});
+
+describe('readFile', () => {
+  it('is a function', () => {
+    expect(typeof mdLinks.readFile).toBe('function');
   });
-})
+});
 
-
-describe('mdLinks', () => {
-
-  it('should...', () => {
-    console.log('FIX ME!');
-  });
-
+test('review this link https://es.wikipedia.org/wiki/Markdown', () => {
+  expect(mdLinks.validateLinksHTTPS('https://es.wikipedia.org/wiki/Markdown'));
 });
