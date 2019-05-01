@@ -1,7 +1,7 @@
 {
   "name": "md-links",
   "version": "1.0.0",
-  "description": "## Preámbulo",
+  "description": "Library to read all markdown files (md), test and validate links in the current file",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -15,7 +15,9 @@
   },
   "author": "Nancy Rodriguez",
   "license": "ISC",
-  "bin": {},
+  "bin": {
+    "md-links": "./lib/cli.js"
+  },
   "bugs": {
     "url": "https://github.com/Lexyfeer/GDL002-md-links/issues"
   },
@@ -23,5 +25,9 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "markdown-link-extractor": "^1.2.0",
+    "woofwoof": "^3.6.7"
   }
 }
