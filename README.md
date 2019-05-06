@@ -30,14 +30,18 @@ En esta parte incluyo 4 diagramas de flujo, 3 son individuales de acuerdo a la f
 
 
 ### ¿Quiénes son los principales usuarios de producto?
--Desarrolladores de software.
--Estudiantes de desarrollo de software.
+
+* Desarrolladores de software.
+* Estudiantes de desarrollo de software.
 
 ### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
--Poder descargar esta librería a su proyecto que estén desarrollando directamente o incluso descargar la librería a su equipo de manera global para que en cada proyecto que ellos vayan a realizar y a documentar con un archivo de extensión .md en caso de que estos archivos contengan links ellos puedan verificar que todos los links que pusieron sean validos y que ninguno este roto antes de subir su proyecto para que en caso de que algún link no este bien ellos puedan corregir sus archivos antes de subirlos.
+
+Poder descargar esta librería a su proyecto que estén desarrollando directamente o incluso descargar la librería a su equipo de manera global para que en cada proyecto que ellos vayan a realizar y a documentar con un archivo de extensión .md en caso de que estos archivos contengan links ellos puedan verificar que todos los links que pusieron sean validos y que ninguno este roto antes de subir su proyecto para que en caso de que algún link no este bien ellos puedan corregir sus archivos antes de subirlos.
 
 ### ¿Cómo se utiliza esta librería?
+
 * Existen dos formas de utilizar la librería:
+
 **1.  Para usarlo de forma Global:**
 
 `npm install -g GDL002-md-links@Lexyfeer/GDL002-md-links#master`.
@@ -45,6 +49,7 @@ En esta parte incluyo 4 diagramas de flujo, 3 son individuales de acuerdo a la f
 De esta forma se instala de forma global en su computadora para poder utilizar con cualquier archivo que requiera analizar sin necesidad de tener que instalar la librería en cada proyecto o incluso si no se tiene un proyecto y solo se requiere el análisis de algún documento.
 
 *Se pueden ingresar rutas absolutas, relativas o directorios.*
+
 **Ejemplos de rutas**:
 
 *  RUTA ABSOLUTA :   `./Documentos/example.md`.
@@ -78,11 +83,11 @@ o si se quieren utilizar sus métodos dentro de su proyecto lo que tendría que 
 
 `const mdLinks = require("md-links");`
 
-// **Caso 1** .- Ruta relativa sin options
-mdLinks.readFile("./some/example.md");
+**Caso 1** .- Ruta relativa sin options
+`mdLinks.readFile("./some/example.md");`
 
-// **Caso 2** .- Ruta absoluta de un directorio sin options
-mdLinks.readFromFolder("./dir");
+**Caso 2** .- Ruta absoluta de un directorio sin options
+`mdLinks.readFromFolder("./dir");`
 
 //PD: Pueden presentarse más casos.
 
